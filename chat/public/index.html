@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat Program</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+</head>
+<body>
+  <ul class="pages">
+    <li class="chat page">
+      <div class="chatArea">
+            <input class="inputName" placeholder="Chang name Here"/>
+            <button id="send_username">Change username</button>
+        <ul class="messages">
+        </ul>
+        <ul class="userOnline">
+          <li class="title"><h3><i class="fas fa-users"></i>  Users Online</h3></li>
+        </ul>
+        <input class="inputMessage" placeholder="Type Here"/>
+      </div>
+    </li>
+    <li class="login page">
+      <div class="form">
+        <h3 class="title">กรุณาใส่ชื่อเล่นของคุณ</h3>
+        <input class="usernameInput" type="text" maxlength="14" />
+      </div>
+    </li>
+  </ul>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>
